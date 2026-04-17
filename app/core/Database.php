@@ -9,7 +9,7 @@ protected $connection;
 
 public function __construct()
 {
-    $this->connection = myqsli_connect(
+    $this->connection = mysqli_connect(
         DB_HOST,
         DB_USER,
         DB_PASS,
